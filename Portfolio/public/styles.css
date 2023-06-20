@@ -6,3 +6,7 @@
   height: 100%;
   object-fit: cover;
 }
+
+body{
+  background-color: #575c61;
+}

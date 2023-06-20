@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../views/bootstrapTemplate.html">Home</a>
+            <a class="nav-link" href="../views/bootstrapTemplate.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../views/experience.html">Experience</a>
@@ -36,7 +36,7 @@
             <a class="nav-link" href="../views/projects.html">Projects</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle nav-link active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Contact
             </a>
             <ul class="dropdown-menu">
@@ -49,45 +49,59 @@
   </nav>
 
   <!-- end navbar -->
-
-  <!-- carousel -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  
+  <!-- Contact form -->
+  <br>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-5">
+        <form>
+          <h3 class="text-warning">Contact</h3>
+          <div class="mb-3 row">
+            <label for="inputFirstName" class="col-sm-3 col-form-label">First name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputLastName" class="col-sm-3 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="inputComments" class="form-label">Comments</label>
+            <textarea class="form-control" id="inputComments" rows="3"></textarea>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active c-item"> <!-- c-item class to adjust size holding image-->
-        <img src="../public/photo1.jpeg" class="d-block w-100 c-img" alt="..."> <!--c-image adjust image size-->
-        <div class="carousel-caption top-0 mt-4">
-          <h1>Roscoe</h1>
-        </div>
-      </div>
-      <div class="carousel-item c-item"> <!-- c-item class to adjust size holding image-->
-        <img src="../public/photo2.jpeg" class="d-block w-100 c-img" alt="..."> <!--c-image adjust image size-->
-        <div class="carousel-caption top-0 mt-4">
-          <h1>Big Bend National Park</h1>
-        </div>
-      </div>
-      <div class="carousel-item c-item"> <!-- c-item class to adjust size-->
-        <img src="../public/photo3.jpeg" class="d-block w-100 c-img" alt="..."> <!--c-image adjust image size-->
-        <div class="carousel-caption top-0 mt-4">
-          <h1>Florence, Italy</h1>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-  <!-- end carousel -->
+  <!-- end Contact form -->
 
+<!--Google map-->
+<br>
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <h2 class="text-warning">Texas A&M University-San Antonio</h2>
+        <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px" >
+          <iframe src="https://maps.google.com/maps?q=One University Way, San Antonio, TX 78224&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            style="height: 100%; width: 100%;" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Google Maps-->
 
   <div class="container">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
