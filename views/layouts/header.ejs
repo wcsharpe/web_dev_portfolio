@@ -24,21 +24,43 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <% if (title === "bootstrapTemplate") { %>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <% } else { %>
+              <a class="nav-link" href="/">Home</a>
+            <% } %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/experience">Experience</a>
+            <% if (title === "experience") { %>
+              <a class="nav-link active" aria-current="page" href="/experience">Experience</a>
+            <% } else { %>
+              <a class="nav-link" href="/experience">Experience</a>
+            <% } %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/education">Education</a>
+            <% if (title === "education") { %>
+              <a class="nav-link active" aria-current="page" href="/education">Education</a>
+            <% } else { %>
+              <a class="nav-link" href="/education">Education</a>
+            <% } %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
+            <% if (title === "projects") { %>
+              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+            <% } else { %>
+              <a class="nav-link" href="/projects">Projects</a>
+            <% } %>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Contact
-            </a>
+            <% if (title === "contact") { %>
+              <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact
+              </a>
+            <% } else { %>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact
+              </a>
+            <% } %>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/contact">Contact</a></li>
             </ul>
